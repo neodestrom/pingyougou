@@ -1,0 +1,230 @@
+ /* 公共样式 */
+ 
+ .fl {
+     float: left;
+ }
+ 
+ .fr {
+     float: right;
+ }
+ 
+ .w {
+     width: 1200px;
+     margin: 0 auto;
+ }
+ /* 这下面是包括上下部分相同的css定义 */
+ 
+ nav {
+     height: 30px;
+     line-height: 30px;
+     background: #f1f1f1;
+ }
+ 
+ .login a {
+     margin-left: 15px;
+ }
+ 
+ .navgation i {
+     margin: 0px 7px;
+ }
+ 
+ .navgation ul li a:nth-of-type(2)::after,
+ .navgation ul li a:nth-of-type(4)::after,
+ .navgation ul li a:nth-of-type(5)::after,
+ .navgation ul li a:nth-of-type(6)::after {
+     display: inline-block;
+     content: "";
+     width: 10px;
+     height: 10px;
+     margin-left: 8px;
+     background: url(../img/archor.png) no-repeat;
+     background-size: 10px 10px;
+     transform: rotate(90deg);
+ }
+ /* 这是header的布局 */
+ 
+ .search {
+     position: relative;
+     margin-top: 27px;
+     height: 105px;
+ }
+ 
+ .logo {
+     position: absolute;
+     width: 171px;
+     height: 61px;
+ }
+ 
+ .logo h1 {
+     font-size: 0px;
+ }
+ 
+ .logo a {
+     display: inline-block;
+     width: 171px;
+     height: 61px;
+     background: url(../img/logo.png) no-repeat;
+ }
+ 
+ .search_box {
+     position: absolute;
+     left: calc(50% - 265px);
+ }
+ 
+ .search_box_top input {
+     width: 455px;
+     height: 30px;
+     padding-left: 12px;
+     font: 18px;
+     border: 1px solid #c81623;
+     outline: none;
+     box-sizing: border-box;
+ }
+ 
+ .search_box_top button {
+     width: 80px;
+     height: 30px;
+     font-size: 18px;
+     margin-bottom: 10px;
+     color: white;
+     background: #c81623;
+     border: 1px solid #c81623;
+     box-sizing: border-box;
+     outline: none;
+ }
+ 
+ .search_box_botton li a {
+     margin-left: 22px;
+ }
+ 
+ .cart {
+     position: absolute;
+     right: 65px;
+     width: 140px;
+     height: 35px;
+     padding: 0px 20px;
+     border: 1px solid #dfdfdf;
+     background: #f7f7f7;
+     box-sizing: border-box;
+ }
+ 
+ .cart a {
+     position: absolute;
+     top: calc(50% - 10px);
+ }
+ 
+ .cart a em {
+     display: inline-block;
+     vertical-align: middle;
+ }
+ 
+ .cart a em:nth-of-type(1) {
+     background: url(../img/cart.png) no-repeat;
+     width: 18px;
+     height: 13px;
+     background-size: 18px 13px;
+ }
+ 
+ .cart a em:nth-of-type(3) {
+     background: url(../img/archor.png) no-repeat;
+     width: 10px;
+     height: 10px;
+     background-size: 10px 10px;
+ }
+ 
+ .cart .reddot {
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     top: -5px;
+     right: 28px;
+     text-align: center;
+     color: #fff;
+     line-height: 14px;
+     background: #e60012;
+     border-radius: 5px 5px 5px 0px;
+ }
+ /* header 的第二个模块 */
+ 
+ .head_nav {
+     position: relative;
+     height: 46px;
+ }
+ 
+ .list_aside {
+     position: absolute;
+     width: 205px;
+     height: 45px;
+ }
+ 
+ .list_aside li {
+     background: #c81623;
+     height: 32px;
+     font-size: 14px;
+     line-height: 32px;
+     padding: 0px 10px;
+     box-sizing: border-box;
+     transition: all .2s;
+ }
+ 
+ .list_aside li a {
+     color: #fff;
+ }
+ 
+ .list_aside li::after {
+     content: "";
+     float: right;
+     background: url("../img/archor.png") no-repeat;
+     margin-top: 8px;
+     width: 15px;
+     height: 15px;
+     background-size: 15px 15px;
+ }
+ 
+ .list_aside li:hover {
+     background: #fff;
+ }
+ 
+ .list_aside li:hover a {
+     color: #c81623;
+ }
+ 
+ .list_aside h3 {
+     font-size: 16px;
+     background: #b1191a;
+     color: #fff;
+     text-align: center;
+     line-height: 45px;
+ }
+ 
+ .list_nav {
+     position: absolute;
+     width: 800px;
+     height: 45px;
+     left: 220px;
+     box-sizing: border-box;
+ }
+ 
+ .list_nav li {
+     padding: 10px;
+     box-sizing: border-box;
+ }
+ 
+ .list_nav li a {
+     color: black;
+     font-size: 16px;
+     margin: 0px 25px;
+ }
+ 
+ .list_nav li a:hover {
+     color: #b1191a;
+ }
+ 
+ .block_line {
+     position: absolute;
+     border-radius: 0;
+     width: 1920px;
+     height: 2px;
+     background: #b1191a;
+     top: 44px;
+ }
